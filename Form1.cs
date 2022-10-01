@@ -25,7 +25,7 @@ namespace AWS_Cloud_Practitioner_Exam
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //leer todos los files y tener el contenido en variable en memoria
+            //Reading files content
 
             lblQuestion.Text = "";
             lblTotal.Text = "";
@@ -59,15 +59,17 @@ namespace AWS_Cloud_Practitioner_Exam
 
 
         }
-
+        /// <summary>
+        /// This method is used by several button associated with different files
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCourse_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-
-           // string[] lines
-
+           
             int [] A=new int[6];
-            A[0] = 9;
+           
 
             int g=A.Min();
 
