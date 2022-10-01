@@ -264,6 +264,37 @@ namespace AWS_Cloud_Practitioner_Exam
             Console.Out.WriteLine(List_Questions[Index].Response);
         }
 
+        /// <summary>
+        /// This Method hides all controls RadioButtons and CheckBoxes from UI
+        /// </summary>
+        private void HideControls()
+        {
+            //radiobutton
+
+            chkboxResponse1.Visible = false;
+            chkboxResponse2.Visible = false;
+            chkboxResponse3.Visible = false;
+            chkboxResponse4.Visible = false;
+            chkboxResponse5.Visible = false;
+            chkboxResponse6.Visible = false;
+            chkboxResponse7.Visible = false;
+            chkboxResponse8.Visible = false;
+            chkboxResponse9.Visible = false;
+            chkboxResponse10.Visible = false;
+
+            //rdbtn
+            rdbtnResponse1.Visible = false;
+            rdbtnResponse2.Visible = false;
+            rdbtnResponse3.Visible = false;
+            rdbtnResponse4.Visible = false;
+            rdbtnResponse5.Visible = false;
+            rdbtnResponse6.Visible = false;
+            rdbtnResponse7.Visible = false;
+            rdbtnResponse8.Visible = false;
+            rdbtnResponse9.Visible = false;
+            rdbtnResponse10.Visible = false;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Index++;
@@ -279,30 +310,7 @@ namespace AWS_Cloud_Practitioner_Exam
 
                 if (List_Questions[Index].Response.Length == 1)
                 {
-                    //radiobutton
-
-                    chkboxResponse1.Visible = false;
-                    chkboxResponse2.Visible = false;
-                    chkboxResponse3.Visible = false;
-                    chkboxResponse4.Visible = false;
-                    chkboxResponse5.Visible = false;
-                    chkboxResponse6.Visible = false;
-                    chkboxResponse7.Visible = false;
-                    chkboxResponse8.Visible = false;
-                    chkboxResponse9.Visible = false;
-                    chkboxResponse10.Visible = false;
-
-                    //rdbtn
-                    rdbtnResponse1.Visible = false;
-                    rdbtnResponse2.Visible = false;
-                    rdbtnResponse3.Visible = false;
-                    rdbtnResponse4.Visible = false;
-                    rdbtnResponse5.Visible = false;
-                    rdbtnResponse6.Visible = false;
-                    rdbtnResponse7.Visible = false;
-                    rdbtnResponse8.Visible = false;
-                    rdbtnResponse9.Visible = false;
-                    rdbtnResponse10.Visible = false;
+                    HideControls();
 
 
 
@@ -403,29 +411,7 @@ namespace AWS_Cloud_Practitioner_Exam
                 }
                 else
                 {
-                    //checkmark
-                    chkboxResponse1.Visible = false;
-                    chkboxResponse2.Visible = false;
-                    chkboxResponse3.Visible = false;
-                    chkboxResponse4.Visible = false;
-                    chkboxResponse5.Visible = false;
-                    chkboxResponse6.Visible = false;
-                    chkboxResponse7.Visible = false;
-                    chkboxResponse8.Visible = false;
-                    chkboxResponse9.Visible = false;
-                    chkboxResponse10.Visible = false;
-                   
-                    //rdbtn
-                    rdbtnResponse1.Visible = false;
-                    rdbtnResponse2.Visible = false;
-                    rdbtnResponse3.Visible = false;
-                    rdbtnResponse4.Visible = false;
-                    rdbtnResponse5.Visible = false;
-                    rdbtnResponse6.Visible = false;
-                    rdbtnResponse7.Visible = false;
-                    rdbtnResponse8.Visible = false;
-                    rdbtnResponse9.Visible = false;
-                    rdbtnResponse10.Visible = false;
+                    HideControls();
 
                     int index = 1;
                     foreach (String s in List_Questions[Index].Responses)
@@ -521,7 +507,7 @@ namespace AWS_Cloud_Practitioner_Exam
                 chkbox.ForeColor = Color.DarkGreen;
                
             }
-            Console.Out.WriteLine(List_Questions[Index].Response);
+           // Console.Out.WriteLine(List_Questions[Index].Response);
         }
     }
 }
