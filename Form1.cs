@@ -31,31 +31,7 @@ namespace AWS_Cloud_Practitioner_Exam
             lblTotal.Text = "";
             lblRespondiendo.Text = "";
 
-            int f = 0;
-
-            chkboxResponse1.Visible = false;
-            chkboxResponse2.Visible = false;
-            chkboxResponse3.Visible = false;
-            chkboxResponse4.Visible = false;
-            chkboxResponse5.Visible = false;
-            chkboxResponse6.Visible = false;
-            chkboxResponse7.Visible = false;
-            chkboxResponse8.Visible = false;
-            chkboxResponse9.Visible = false;
-            chkboxResponse10.Visible = false;
-
-            //rdbtn
-            rdbtnResponse1.Visible = false;
-            rdbtnResponse2.Visible = false;
-            rdbtnResponse3.Visible = false;
-            rdbtnResponse4.Visible = false;
-            rdbtnResponse5.Visible = false;
-            rdbtnResponse6.Visible = false;
-            rdbtnResponse7.Visible = false;
-            rdbtnResponse8.Visible = false;
-            rdbtnResponse9.Visible = false;
-            rdbtnResponse10.Visible = false;
-
+            HideControls();
 
 
         }
@@ -67,11 +43,9 @@ namespace AWS_Cloud_Practitioner_Exam
         private void btnCourse_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-           
-            int [] A=new int[6];
-           
 
-            int g=A.Min();
+            HideControls();
+           
 
             switch (btn.Tag.ToString())
             {
@@ -120,19 +94,7 @@ namespace AWS_Cloud_Practitioner_Exam
 
                 if (List_Questions[0].Response.Length == 1)
                 {
-                    //radiobutton
-
-                    rdbtnResponse1.Visible = true;
-                    rdbtnResponse2.Visible = true;
-                    rdbtnResponse3.Visible = true;
-                    rdbtnResponse4.Visible = true;
-
-                    chkboxResponse1.Visible = false;
-                    chkboxResponse2.Visible = false;
-                    chkboxResponse3.Visible = false;
-                    chkboxResponse4.Visible = false;
-
-
+                                       
                     int index = 1;
                     foreach (String s in List_Questions[0].Responses)
                     {
@@ -141,15 +103,19 @@ namespace AWS_Cloud_Practitioner_Exam
                         {
                             case 1:
                                 rdbtnResponse1.Text = s;
+                                rdbtnResponse1.Visible = true;
                                 break;
                             case 2:
+                                rdbtnResponse2.Visible = true;
                                 rdbtnResponse2.Text = s;
                                 break;
                             case 3:
                                 rdbtnResponse3.Text = s;
+                                rdbtnResponse3.Visible = true;
                                 break;
                             case 4:
                                 rdbtnResponse4.Text = s;
+                                rdbtnResponse4.Visible = true;
                                 break;
 
                         }
@@ -235,10 +201,10 @@ namespace AWS_Cloud_Practitioner_Exam
                     }
 
                     _List_Questions.Add(q);
-                    if(_List_Questions.Count()==45)
-                    {
-                        int g = 9;
-                    }
+                    //if(_List_Questions.Count()==45)
+                    //{
+                    //    int g = 9;
+                    //}
                 }
             }
 
@@ -484,7 +450,7 @@ namespace AWS_Cloud_Practitioner_Exam
                                 break;
                             case 10:
                                 chkboxResponse10.Text = s;
-                                chkboxResponse10.Location = new Point(1022, 101010);
+                                chkboxResponse10.Location = new Point(1022, 1010);
                                 chkboxResponse10.Visible = true;
                                 chkboxResponse10.ForeColor = Color.Black;
                                 chkboxResponse10.Checked = false;
