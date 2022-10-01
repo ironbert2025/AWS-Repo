@@ -1,0 +1,9 @@
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\bin\Debug\AWS_Cloud_Practitioner_Exam.exe.config
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\bin\Debug\AWS_Cloud_Practitioner_Exam.exe
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\bin\Debug\AWS_Cloud_Practitioner_Exam.pdb
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\obj\Debug\AWS_Cloud_Practitioner_Exam.csprojResolveAssemblyReference.cache
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\obj\Debug\AWS_Cloud_Practitioner_Exam.Form1.resources
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\obj\Debug\AWS_Cloud_Practitioner_Exam.Properties.Resources.resources
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\obj\Debug\AWS_Cloud_Practitioner_Exam.csproj.GenerateResource.Cache
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\obj\Debug\AWS_Cloud_Practitioner_Exam.exe
+c:\users\aldor\documents\visual studio 2013\Projects\AWS_Cloud_Practitioner_Exam\AWS_Cloud_Practitioner_Exam\obj\Debug\AWS_Cloud_Practitioner_Exam.pdb
