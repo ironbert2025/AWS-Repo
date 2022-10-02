@@ -89,7 +89,8 @@ namespace AWS_Cloud_Practitioner_Exam
             lblTotal.Text ="Total: " + List_Questions.Count().ToString();
             lblRespondiendo.Text =  "1 of " + List_Questions.Count().ToString();
 
-           
+
+                txtbxQuestion.Text = List_Questions[0]._Question;
                 lblQuestion.Text = List_Questions[0]._Question;
 
                 if (List_Questions[0].Response.Length == 1)
@@ -128,7 +129,11 @@ namespace AWS_Cloud_Practitioner_Exam
 
                 }
         }
-
+        /// <summary>
+        /// Process the files and get the Questions and Responses lists
+        /// </summary>
+        /// <param name="lines">question and responses in each file line</param>
+        /// <returns>List of Questions to be used by the program</returns>
         private List<Question> ProcessFileContent(string[] lines)
         {
 
@@ -137,7 +142,7 @@ namespace AWS_Cloud_Practitioner_Exam
             int index = -1;
 
             /*
-             *      Question
+             *      --Question
              *      *3
              *      a)
              *      b)
@@ -271,7 +276,7 @@ namespace AWS_Cloud_Practitioner_Exam
             {
                 lblRespondiendo.Text = Index + 1 + " of " + List_Questions.Count().ToString();
 
-
+                txtbxQuestion.Text = List_Questions[Index]._Question;
                 lblQuestion.Text = List_Questions[Index]._Question;
 
                 if (List_Questions[Index].Response.Length == 1)

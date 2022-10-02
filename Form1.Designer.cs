@@ -61,6 +61,7 @@
             this.chkboxResponse8 = new System.Windows.Forms.CheckBox();
             this.chkboxResponse9 = new System.Windows.Forms.CheckBox();
             this.chkboxResponse10 = new System.Windows.Forms.CheckBox();
+            this.txtbxQuestion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCourse6Hours
@@ -130,7 +131,7 @@
             // 
             // btnLess
             // 
-            this.btnLess.Location = new System.Drawing.Point(43, 109);
+            this.btnLess.Location = new System.Drawing.Point(40, 85);
             this.btnLess.Name = "btnLess";
             this.btnLess.Size = new System.Drawing.Size(73, 25);
             this.btnLess.TabIndex = 6;
@@ -139,7 +140,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(134, 109);
+            this.btnAdd.Location = new System.Drawing.Point(131, 85);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(73, 25);
             this.btnAdd.TabIndex = 7;
@@ -151,7 +152,7 @@
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(70, 158);
+            this.lblQuestion.Location = new System.Drawing.Point(70, 521);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(137, 24);
             this.lblQuestion.TabIndex = 8;
@@ -267,7 +268,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(43, 83);
+            this.textBox1.Location = new System.Drawing.Point(40, 59);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(49, 20);
             this.textBox1.TabIndex = 22;
@@ -275,7 +276,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 83);
+            this.textBox2.Location = new System.Drawing.Point(131, 59);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(49, 20);
             this.textBox2.TabIndex = 23;
@@ -284,7 +285,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(309, 73);
+            this.lblTotal.Location = new System.Drawing.Point(306, 49);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(46, 18);
             this.lblTotal.TabIndex = 24;
@@ -294,7 +295,7 @@
             // 
             this.lblRespondiendo.AutoSize = true;
             this.lblRespondiendo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespondiendo.Location = new System.Drawing.Point(312, 98);
+            this.lblRespondiendo.Location = new System.Drawing.Point(309, 74);
             this.lblRespondiendo.Name = "lblRespondiendo";
             this.lblRespondiendo.Size = new System.Drawing.Size(46, 18);
             this.lblRespondiendo.TabIndex = 25;
@@ -450,11 +451,21 @@
             this.chkboxResponse10.Text = "checkBox4";
             this.chkboxResponse10.UseVisualStyleBackColor = true;
             // 
+            // txtbxQuestion
+            // 
+            this.txtbxQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxQuestion.Location = new System.Drawing.Point(40, 116);
+            this.txtbxQuestion.Multiline = true;
+            this.txtbxQuestion.Name = "txtbxQuestion";
+            this.txtbxQuestion.Size = new System.Drawing.Size(989, 74);
+            this.txtbxQuestion.TabIndex = 38;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 586);
+            this.Controls.Add(this.txtbxQuestion);
             this.Controls.Add(this.chkboxResponse10);
             this.Controls.Add(this.chkboxResponse9);
             this.Controls.Add(this.chkboxResponse8);
@@ -531,6 +542,7 @@
         private System.Windows.Forms.CheckBox chkboxResponse8;
         private System.Windows.Forms.CheckBox chkboxResponse9;
         private System.Windows.Forms.CheckBox chkboxResponse10;
+        private System.Windows.Forms.TextBox txtbxQuestion;
     }
 }
 
